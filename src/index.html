@@ -1,50 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
   <meta charset="utf-8" />
-  <title>Policy Documents – OpenAI GPT Actions</title>
+  <title>NORSAIN Privacy Center</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 0 1rem 3rem 1rem;
       line-height: 1.6;
     }
-    h1, h2 {
-      margin-top: 1.5rem;
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
     }
-    ul {
-      padding-left: 1.2rem;
+    h1 {
+      margin-top: 0;
+    }
+    h2 {
+      margin-top: 1.75rem;
+    }
+    .tagline {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .section-intro {
+      margin-bottom: 0.5rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+    .card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+    .card p {
+      margin-top: 0.25rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
     }
     a {
       text-decoration: none;
     }
+    .card a {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Policy Documents for OpenAI GPT Actions</h1>
-  <p>
-    This site hosts privacy policies and related documents used for
-    GPT Actions and API integrations.
-  </p>
+  <header>
+    <h1>NORSAIN Privacy Center</h1>
+    <p class="tagline">
+      Oversikt over personvernerklæringer og relaterte policy-dokumenter for NORSAINs
+      digitale assistenter, GPT-baserte løsninger og tilknyttede API-integrasjoner.
+    </p>
+  </header>
 
-  <h2>Generic policies</h2>
-  <ul>
-    <li><a href="privacy-generic-no.html">Privacy Policy – Generic (Norwegian)</a></li>
-    <li><a href="privacy-generic-en.html">Privacy Policy – Generic (English)</a></li>
-  </ul>
+  <section>
+    <h2>Generelle personvernerklæringer</h2>
+    <p class="section-intro">
+      Disse erklæringene gjelder på tvers av NORSAINs digitale assistenter og GPT Actions.
+      De brukes ofte som referanse i tillegg til mer spesifikke policies per tjeneste.
+    </p>
 
-  <h2>Example / per-Action policies</h2>
-  <ul>
-    <li><a href="privacy-example-action-no.html">Example Privacy Policy – Specific GPT Action (Norwegian)</a></li>
-    <!-- Add more links here as you create new policy files -->
-  </ul>
+    <ul class="card-grid">
+      <li class="card">
+        <h3>Generisk personvernerklæring (norsk)</h3>
+        <p>
+          Overordnet personvernerklæring for NORSAINs digitale assistenter og GPT-integrasjoner.
+          Dekker formål, behandlingsgrunnlag, lagring, deling og rettigheter.
+        </p>
+        <a href="privacy-generic-no.html">Les personvernerklæringen →</a>
+      </li>
 
-  <p>
-    For questions about these documents, contact:
-    <a href="mailto:privacy@dittdomene.no">privacy@dittdomene.no</a>.
-  </p>
+      <li class="card">
+        <h3>Generic Privacy Policy (English)</h3>
+        <p>
+          High-level privacy policy for NORSAIN digital assistants and GPT-based integrations.
+          Covers purposes, legal basis, retention, data sharing and user rights.
+        </p>
+        <a href="privacy-generic-en.html">Read the privacy policy →</a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Action-spesifikke policies</h2>
+    <p class="section-intro">
+      Noen GPT Actions og integrasjoner har egne personvernerklæringer som beskriver
+      akkurat hvilke systemer og datatyper som brukes i den konkrete tjenesten.
+    </p>
+
+    <ul class="card-grid">
+      <li class="card">
+        <h3>Eksempelpolicy for én GPT Action (norsk)</h3>
+        <p>
+          Mal for en Action-spesifikk personvernerklæring. Kopier denne når du lager
+          nye NORSAIN GPT Actions som kobles mot interne eller eksterne API-er.
+        </p>
+        <a href="privacy-example-action-no.html">Vis eksempelpolicy →</a>
+      </li>
+      <!-- Legg til nye kort her etter hvert som du lager egne policies per Action -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>
+      Har du spørsmål om disse dokumentene eller NORSAINs behandling av personopplysninger,
+      kan du kontakte oss på
+      <a href="mailto:privacy@norsain.ai">privacy@norsain.ai</a>.
+    </p>
+  </footer>
 </body>
 </html>
+
